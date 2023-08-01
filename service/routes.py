@@ -62,6 +62,7 @@ def list_accounts():
     """
     app.logger.info("Request to list Accounts")
 
+
     accounts = Account.all()
     account_list = [account.serialize() for account in accounts]
 
